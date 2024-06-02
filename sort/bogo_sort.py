@@ -12,6 +12,9 @@ def in_order(numbers: list[int]) -> bool:
 
 
 def bogo_sort(numbers):
+    """
+    O((n+1)!)
+    """
     random.shuffle(numbers)
     while not in_order(numbers):
         random.shuffle(numbers)

@@ -3,6 +3,9 @@ import time
 
 
 def bubble_sort(numbers: list[int]) -> list[int]:
+    """
+    O(n**2)
+    """
     numbers_count = len(numbers)
     for i in range(numbers_count):
         for j in range(numbers_count - 1 - i):
